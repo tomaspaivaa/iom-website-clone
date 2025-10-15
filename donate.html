@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="donate.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+</head>
+
+<body>
+    <div class="container">
+        <div class="titulo"><img src="img/logoportugal.svg">
+            <p>DONATE</p>
+        </div>
+        <div class="row">
+            <div class="col-35">
+                <label for="particular">Doação única ou periódica?</label>
+            </div>
+            <div class="col-65 radio">
+                <fieldset id="doacao">
+                    <div>
+                        <input type="radio" id="unica-radio" name="pt" checked> <label for="particular">Única</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="periodica-radio" name="pt"> <label for="empresa">Periódica</label>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+
+        <form id="unica-form">
+            <div class="row">
+                <div class="col-35">
+                    <label>E-mail:</label>
+                </div>
+                <div class="col-65">
+                    <input type="text" placeholder="john.doe@example.com" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-35">
+                    <label>Quantia de dinheiro:</label>
+                </div>
+                <div class="col-65">
+                    <select id="select">
+                        <option value="20">20€</option>
+                        <option value="40">40€</option>
+                        <option value="80">80€</option>
+                        <option value="custom" selected>Quantia à escolha do utilizador</option>
+                    </select>
+                </div>
+                <div class="row" id="quantia">
+                    <div class="col-95">
+                        <label>Quantia:</label>
+                    </div>
+                    <div class="col-95">
+                        <input type="number" id="valorDoacao" placeholder="XX" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-35">
+                    <label for="nome">Destino do donativo:</label>
+                </div>
+                <div class="col-65">
+                    <select>
+                        <option>Gaza</option>
+                        <option>Afeganistão</option>
+                        <option>Turquia-Síria</option>
+                        <option>Ucrânia</option>
+                        <option>Sudão</option>
+                        <option>Somália</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-35">
+                    <label for="particular">Empresa ou particular?</label>
+                </div>
+                <div class="col-65 radio">
+                    <fieldset id="tipoo">
+                        <div>
+                            <input type="radio" id="particular" name="tp" checked> <label
+                                for="particular">Particular</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="empresa" name="tp"> <label for="empresa">Empresa</label>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-35">
+                    <label for="country">Nome:</label>
+                </div>
+                <div class="col-65">
+                    <input type="text" placeholder="John" required>
+                </div>
+            </div>
+            <div class="row" id="apelido">
+                <div class="col-35">
+                    <label id="painel">Apelido: </label>
+                </div>
+                <div class="col-65">
+                    <input type="text" placeholder="Doe" required></input>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-35">
+                    <label for="country">Telemóvel:</label>
+                </div>
+                <div class="col-65">
+                    <input type="text" maxlength="9" placeholder="913123123" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-35">
+                    <label for="country">NIF:</label>
+                </div>
+                <div class="col-65">
+                    <input type="text" maxlength="9" placeholder="257129839" required>
+                </div>
+            </div>
+            <div class="col-35">
+                <label for="nome">Metódo de pagamento:</label>
+            </div>
+            <div class="col-65">
+                <select id="select">
+                    <option value="Credito">Cartão de crédito</option>
+                    <option value="Paypal">Paypal</option>
+                    <option value="MB">Multibanco</option>
+                    <option value="Mbway">MbWay</option>
+                </select>
+            </div>
+            <div class="row buttons">
+                <input class="submit" type="submit" id="btnDoacaUnica" value="Calcular doação">
+            </div>
+        </form>
+
+        <form id="periodica-form">
+            <div class="row">
+                <div class="col-35">
+                    <label for="nome">E-mail:</label>
+                </div>
+                <div class="col-65">
+                    <input type="text" placeholder="john.doe@example.com" required>
+                </div>
+            </div>
+            <div>
+                <div class="row" id="quantia">
+                    <div class="col-35">
+                        <label for="country">Quantia de dinheiro:</label>
+                    </div>
+                    <div class="col-65">
+                        <input type="number" id="valorDoacaoPeriodica" placeholder="XX" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-35">
+                    <label for="nome">Destino do donativo:</label>
+                </div>
+                <div class="col-65">
+                    <select>
+                        <option>Gaza</option>
+                        <option>Afeganistão</option>
+                        <option>Turquia-Síria</option>
+                        <option>Ucrânia</option>
+                        <option>Sudão</option>
+                        <option>Somália</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-35">
+                    <label for="particular">Empresa ou particular?</label>
+                </div>
+                <div class="col-65 radio">
+                    <fieldset id="tipoo">
+                        <div>
+                            <input type="radio" id="particular" name="tp" checked> <label
+                                for="particular">Particular</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="empresa" name="tp"> <label for="empresa">Empresa</label>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-35">
+                    <label for="country">Nome:</label>
+                </div>
+                <div class="col-65">
+                    <input type="text" placeholder="John" required>
+                </div>
+            </div>
+            <div class="row" id="apelido">
+                <div class="col-35">
+                    <label id="painel">Apelido: </label>
+                </div>
+                <div class="col-65">
+                    <input type="text" placeholder="Doe" required></input>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-35">
+                    <label for="country">Telemóvel:</label>
+                </div>
+                <div class="col-65">
+                    <input type="text" maxlength="9" placeholder="913123123" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-35">
+                    <label for="country">NIF:</label>
+                </div>
+                <div class="col-65">
+                    <input type="text" maxlength="9" placeholder="257129839" required>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="row">
+                <div class="col-35">
+                    <label for="country">Rua:</label>
+                </div>
+                <div class="col-65">
+                    <input type="text" placeholder="Rua Cónego de Maio, 12" required>
+                </div>
+            </div>
+            <div class="row" id="apelido">
+                <div class="col-35">
+                    <label id="painel">Cidade: </label>
+                </div>
+                <div class="col-65">
+                    <input type="text" placeholder="Aveiro" required></input>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-35">
+                    <label for="country">Código postal:</label>
+                </div>
+                <div class="col-65">
+                    <input type="text" maxlength="9" placeholder="3810-089" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-35">
+                    <label for="country">Pais:</label>
+                </div>
+                <div class="col-65">
+                    <input type="text" maxlength="9" placeholder="Portugal" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-35">
+                    <label for="nome">Metódo de pagamento:</label>
+                </div>
+                <div class="col-65">
+                    <select id="select-pagamento">
+                        <option value="Credito">Cartão de crédito</option>
+                        <option value="Direto" selected>Débito direto</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row" id="iban">
+                <div class="col-35">
+                    <label for="country">IBAN:</label>
+                </div>
+                <div class="col-65">
+                    <input type="text" maxlength="26" placeholder="PT50 XXXXXXXXXXXXXXXXXXXXX" required>
+                </div>
+            </div>
+            <div class="row buttons">
+                <div class="row buttons">
+                    <input class="submit" type="submit" id="btnDoacaPeriodica" value="Calcular doação">
+                </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="script/donate.js"></script>
+</body>
+
+</html>
