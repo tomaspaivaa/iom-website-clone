@@ -26,7 +26,7 @@ This project was developed entirely from scratch, **without using any external f
 
 ## Live Demo
 You can view the website here:  
-[IOM Portugal Replica](https://teu-utilizador.github.io/IOM-Website-Clone/tweb2.html)
+[IOM Portugal Replica](https://tomaspaivaa.github.io/IOM-Website-Clone/tweb2.html)
 
 ---
 
