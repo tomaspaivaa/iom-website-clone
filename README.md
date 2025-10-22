@@ -30,4 +30,4 @@ You can view the website here:
 
 ---
 
-*This work was completed as part of the “Web Technologies” course during the 2023/2024 academic year.*
+*This work was completed as part of the “Web Technologies” course during the 2023/2024 academic year. (Grade: 8 out of 10)*
