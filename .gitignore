@@ -1,0 +1,19 @@
+# Cache e ficheiros temporários
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Ficheiros do sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ficheiros de editor/IDE
+.vscode/
+.idea/
+
+# Sass cache
+.sass-cache/
+
+# Mapas CSS (opcional)
+*.css.map
